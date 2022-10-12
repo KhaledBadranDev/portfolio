@@ -1,3 +1,47 @@
+# WORK IN PROGRESS
+
+
+## Portfolio Tips:
+
+- Don't mention your city, address, etc.
+- Don't Include a picture of yourself
+- Projects shouldn't be too simple
+
+
+---
+## Tailwindcss
+
+Reference: https://tailwindcss.com/docs/guides/create-react-app<br>
+`npm install -D tailwindcss postcss autoprefixer`<br>
+`npx tailwindcss init -p` <br>
+Add the paths to all of your template files in your tailwind.config.js file.<br>
+<pre>/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</pre>
+
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.<pre>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</pre>
+
+---
+
+## React Anchor Link Smooth Scroll
+
+Reference: https://www.npmjs.com/package/react-anchor-link-smooth-scroll <br>
+`npm i react-anchor-link-smooth-scroll`
+
+___
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
