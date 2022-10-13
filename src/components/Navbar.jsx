@@ -21,22 +21,22 @@ const Navbar = () => {
 
                 <ul className={`sm:flex grid justify-items-end sm:items-center sm:pb-0 pb-6 absolute sm:static bg-white shadow-xl sm:shadow-none sm:z-auto z-[-1] left-0 w-full sm:w-auto sm:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-0' : 'top-[-490px]'}`}>
                     <li className="sm:ml-8 mr-4 text-xl sm:my-0 mt-16">
-                        <AnchorLink href="#projects" className='hover:text-red-400 duration-500'>
+                        <AnchorLink href="#projects" className='hover:text-cyan-500 duration-300'>
                             Projects
                         </AnchorLink>
                     </li>
                     <li className="sm:ml-8  mr-4 text-xl sm:my-0 mt-5">
-                        <AnchorLink href="#about" className='hover:text-red-400 duration-500'>
+                        <AnchorLink href="#about" className='hover:text-cyan-500 duration-300'>
                             About
                         </AnchorLink>
                     </li>
                     <li className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5">
-                        <AnchorLink href="#contact" className='hover:text-red-400 duration-500'>
+                        <AnchorLink href="#contact" className='hover:text-cyan-500 duration-300'>
                             Contact
                         </AnchorLink>
                     </li>
                     <li>
-                        <BsFillMoonStarsFill className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5" style={{ fontSize: '25px' }} />
+                        <BsFillMoonStarsFill className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-cyan-500 duration-300" style={{ fontSize: '25px' }} />
                     </li>
                 </ul>
             </div>
