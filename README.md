@@ -6,7 +6,20 @@
 - Don't mention your city, address, etc.
 - Don't Include a picture of yourself
 - Projects shouldn't be too simple
+---
 
+## Sass
+
+Reference: https://sass-lang.com/install <br>
+`npm install sass`<br>
+
+
+---
+
+## React Icons
+
+Reference: https://react-icons.github.io/react-icons <br>
+`npm install react-icons --save`<br>
 
 ---
 ## Tailwindcss
