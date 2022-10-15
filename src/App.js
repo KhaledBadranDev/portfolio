@@ -7,14 +7,14 @@ import Footer from './components/Footer';
 
 function App() {
 	return (
-		<>
-			<Navbar/>
-			<Home/>
-			<Projects/>	
-			<About/>	
-			<Contact/>	
-			<Footer/>
-		</>
+		<div className="container mx-auto md:px-20">
+			<Navbar />
+			<Home />
+			<Projects />
+			<About />
+			<Contact />
+			<Footer />
+		</div>
 	);
 }
 
