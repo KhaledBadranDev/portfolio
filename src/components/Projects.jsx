@@ -1,20 +1,50 @@
+import AnimatedLetters from './AnimatedLetters'
+import { useEffect, useState } from 'react'
+import Card from './Card'
 
 const Projects = () => {
-    return(
-        <p className="m-12" id="projects">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis veniam, nesciunt eos voluptate adipisci ullam.
-            Ad necessitatibus vero cumque suscipit iste, minus veritatis 
-            tenetur vel illum natus doloremque quisquam commodi maxime eaque dicta
-            sapiente corporis? Beatae quasi nobis quis id. Nesciunt dolores 
-            optio illo, saepe quaerat, blanditiis quod harum sint maiores ipsum 
-            ex voluptatibus aspernatur ipsam fugit incidunt ullam quam consequuntur 
-            explicabo, est dicta laborum velit rem
-            autem porro. Adipisci, in exercitationem? Quaerat nihil magnam
-            eligendi eos, sit tempore aperiam nostrum dolorum sapiente perferendis,
-            corporis reprehenderit rerum voluptatibus ad ducimus consequatur id
-            deleniti, molestiae ipsum laudantium praesentium velit! Quaerat, enim.
-        </p>
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const sectionHeader = ["P", "r", "o", "j", "e", "c", "t", "s"]
+
+    // const projects = [
+    //     {
+
+    //     },
+    //     {
+
+    //     },
+    //     {
+
+    //     },
+    //     {
+
+    //     },
+    //     {
+
+    //     }
+    // ]
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 2000)
+    }, [])
+
+    return (
+        <section className="m-12" id="projects">
+            <header>
+                <h1 className="text-5xl font-bold flex place-content-center">
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={sectionHeader}
+                    />
+                </h1>
+            </header>
+            <main>
+                <Card imgSrc="https://picsum.photos/id/188/720/400" imgAlt="test" title="Title Here" briefDescription="Brief Description Here - lorem ipsum dolor sit amet - lorem ipsum dolor sit amet lorem dolor sit amet" />
+                <Card imgSrc="https://picsum.photos/id/188/720/400" imgAlt="test" title="Title Here" briefDescription="Brief Description Here - lorem ipsum dolor sit amet" />
+            </main>
+        </section>
     );
 }
 

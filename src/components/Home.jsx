@@ -16,9 +16,9 @@ const Home = () => {
     }, [])
 
     return (
-        <div>
-            <article className="mt-20 m-12 flex place-content-center">
-                <h1 className="text-5xl">
+        <section id="home">
+            <header className="mt-20 m-12 flex place-content-center">
+                <h1 className="text-5xl font-bold">
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _12`}>i</span>
                     <span className={`${letterClass} _13`}>,</span>
@@ -39,19 +39,19 @@ const Home = () => {
                         idx={17 + nameArr.length}
                     />
                 </h1>
-            </article>
-            <div className="text-5xl flex justify-center py-3 ">
-                <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank">
+            </header>
+            <figure className="text-5xl flex justify-center py-3 ">
+                <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank" rel="noreferrer">
                     <AiFillYoutube className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-cyan-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
-                <a href="https://github.com/ProgrammingGym" target="_blank">
+                <a href="https://github.com/ProgrammingGym" target="_blank" rel="noreferrer">
                     <AiFillGithub className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-cyan-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
-                <a href="https://programming-gym.blogspot.com/" target="_blank">
+                <a href="https://programming-gym.blogspot.com/" target="_blank" rel="noreferrer">
                     <FaBlogger className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-cyan-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
-            </div>
-        </div>
+            </figure>
+        </section>
     )
 }
 
