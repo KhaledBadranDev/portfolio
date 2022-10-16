@@ -2,19 +2,19 @@
 import Button from "./Button"
 import { AiFillYoutube, AiFillGithub } from "react-icons/ai"
 
-const Card = ({ imgSrc, imgAlt, title, briefDescription }) => {
+const Card = ({ imgSrc, title, techStack, briefDescription }) => {
     return (
         <article className="my-10">
             <div className="justify-items-start justify-between h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <figure>
                     <img className="w-full object-cover object-center"
-                        src={imgSrc} alt={imgAlt} />
+                        src={imgSrc} alt="Project Thumbnail" />
                 </figure>
                 <div className="relative container p-5 pb-2">
                     <h2 className="flex place-content-center text-3xl font-semibold mb-3">{title}</h2>
                     <h3 className="text-2xl">Tech Stack:
                     </h3>
-                    <p className="mb-3">{briefDescription}</p>
+                    <p className="mb-3">{techStack}</p>
 
                     <h3 className="text-2xl">Description:
                     </h3>
