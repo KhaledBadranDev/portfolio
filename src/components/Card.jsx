@@ -25,10 +25,10 @@ const Card = ({ imgSrc, title, techStack, briefDescription }) => {
                     </div>
                     <div className="flex place-content-center mt-2">
                         <a href="https://github.com/ProgrammingGym" target="_blank" rel="noreferrer">
-                            <AiFillGithub className="hover:text-cyan-500 duration-300 mr-2" style={{ fontSize: '40px' }} />
+                            <AiFillGithub className="hover:text-indigo-700 duration-300 mr-2" style={{ fontSize: '40px' }} />
                         </a>
                         <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank" rel="noreferrer">
-                            <AiFillYoutube className=" hover:text-cyan-500 duration-300" style={{ fontSize: '40px' }} />
+                            <AiFillYoutube className=" hover:text-indigo-700 duration-300" style={{ fontSize: '40px' }} />
                         </a>
                     </div>
                 </div>
