@@ -1,9 +1,9 @@
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './Navbar';
+import Home from './Home';
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
+import Footer from './Footer';
 
 import {createContext} from 'react'
 

@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-import { darkModeContext } from "../App.js"
+import { darkModeContext } from "./App"
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);

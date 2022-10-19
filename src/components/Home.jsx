@@ -3,7 +3,7 @@ import AnimatedLetters from './AnimatedLetters'
 import { AiFillYoutube, AiFillGithub } from "react-icons/ai"
 import { FaBlogger } from "react-icons/fa"
 
-import { darkModeContext } from "../App.js"
+import { darkModeContext } from "./App"
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
