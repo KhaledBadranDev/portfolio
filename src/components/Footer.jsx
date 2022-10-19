@@ -5,8 +5,8 @@ import { FaBlogger } from "react-icons/fa"
 const Footer = () => {
     return (
 
-        <footer className="pb-5 shadow-xl w-full">
-            <div className='flex place-content-center mx-auto bg-white'>
+        <footer className="container mx-auto pb-5">
+            <div className='flex place-content-center mx-auto'>
                 <figure className="text-5xl flex justify-center py-3">
                     <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank" rel="noreferrer">
                         <AiFillYoutube className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-indigo-700 duration-300" style={{ fontSize: '25px' }} />

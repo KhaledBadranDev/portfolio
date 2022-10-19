@@ -14,7 +14,7 @@ const Projects = () => {
     }, [])
 
     return (
-        <section className="m-12" id="projects">
+        <section className="container mx-auto" id="projects">
             <header>
                 <h1 className="text-5xl font-bold flex place-content-center">
                     <AnimatedLetters

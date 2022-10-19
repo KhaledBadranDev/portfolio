@@ -12,7 +12,7 @@ const About = () => {
     }, [])
 
     return(
-        <section className="mt-40 mb-40" id="about">
+        <section className="container mx-auto mt-40 mb-40" id="about">
             <header>
                 <h1 className="mb-10 text-5xl font-bold flex place-content-center">
                     <AnimatedLetters
