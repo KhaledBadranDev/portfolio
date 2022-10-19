@@ -5,24 +5,24 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 
-import {createContext} from 'react'
+import useTheme from "../hooks/useTheme"
 
-export const darkModeContext = createContext()
 
 function App() {
-// dark mode home page #181818
-	return (
-		<div className="container mx-auto md:px-20">
-			<darkModeContext.Provider value={true}>
-				<Navbar />
-				<Home />
-				<Projects />
-				<About />
-				<Contact />
-				<Footer />
-			</darkModeContext.Provider>
-		</div>
-	);
-}
+    const darkMode = useTheme()
 
+	return (
+        	<div className={darkMode ? "dark" : ""}>
+				<div className="transition-all duration-500 ease-in bg-white dark:bg-[#181818]">
+					<Navbar />
+					<Home />
+					<Projects />
+					<About />
+					<Contact />
+					<Footer />
+				</div>
+			</div>
+	);
+
+}
 export default App;

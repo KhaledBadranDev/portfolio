@@ -1,13 +1,17 @@
-import { useState, useContext } from 'react'
+import { useState} from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-import { darkModeContext } from "./App"
+import useTheme from "../hooks/useTheme"
+import useThemeUpdate from "../hooks/useThemeUpdate"
+
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(useContext(darkModeContext));
+    const darkMode = useTheme()
+    const toggleTheme = useThemeUpdate()
+
     return (
         <div className={darkMode ? "dark" : ""}>
             <nav className="z-20 shadow-xl w-full fixed top-0 left-0 transition-all duration-500 ease-in bg-white dark:bg-[#212121]">
@@ -39,7 +43,7 @@ const Navbar = () => {
                             </AnchorLink>
                         </li>
                         <li>
-                            <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-indigo-700 duration-300" style={{ fontSize: '25px' }} />
+                            <BsFillMoonStarsFill onClick={() => toggleTheme()} className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-indigo-700 duration-300" style={{ fontSize: '25px' }} />
                         </li>
                     </ul>
                 </div>
