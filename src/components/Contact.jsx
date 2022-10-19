@@ -14,7 +14,7 @@ const Contact = () => {
 
 
     return(
-        <section className="mt-40 mb-40" id="contact">
+        <section className="container mx-auto mt-40 mb-40" id="contact">
             <header>
                 <h1 className="mb-10 text-5xl font-bold flex place-content-center">
                     <AnimatedLetters
