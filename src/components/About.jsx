@@ -11,22 +11,23 @@ const About = () => {
         }, 2000)
     }, [])
 
-    return(
+    return (
         <section className="container mx-auto mt-40 mb-40" id="about">
             <header>
-                <h1 className="mb-10 text-5xl font-bold flex place-content-center">
+                <h1 className="mb-10 text-5xl font-bold flex place-content-center text-teal-500">
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={sectionHeader}
                     />
                 </h1>
             </header>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis veniam, nesciunt eos voluptate adipisci ullam.
-            Ad necessitatibus vero cumque suscipit iste, minus veritatis 
-            tenetur vel illum natus doloremque quisquam commodi maxime eaque dicta
-            sapiente corporis? Beatae quasi nobis quis id. Nesciunt dolores 
-
+            <p className="dark:text-[#fff]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis veniam, nesciunt eos voluptate adipisci ullam.
+                Ad necessitatibus vero cumque suscipit iste, minus veritatis
+                tenetur vel illum natus doloremque quisquam commodi maxime eaque dicta
+                sapiente corporis? Beatae quasi nobis quis id. Nesciunt dolores
+            </p>
         </section>
     );
 }

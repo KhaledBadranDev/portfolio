@@ -13,20 +13,22 @@ const Contact = () => {
     }, [])
 
 
-    return(
+    return (
         <section className="container mx-auto mt-40 mb-40" id="contact">
             <header>
-                <h1 className="mb-10 text-5xl font-bold flex place-content-center">
+                <h1 className="mb-10 text-5xl font-bold flex place-content-center text-teal-500">
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={sectionHeader}
                     />
                 </h1>
             </header>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis veniam, nesciunt eos voluptate adipisci ullam.
-            Ad necessitatibus vero cumque suscipit iste, minus veritatis 
-            tenetur vel illum natus doloremque quisquam commodi maxime eaque dicta
+            <p className="dark:text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis veniam, nesciunt eos voluptate adipisci ullam.
+                Ad necessitatibus vero cumque suscipit iste, minus veritatis
+                tenetur vel illum natus doloremque quisquam commodi maxime eaque dicta
+            </p>
         </section>
     );
 }

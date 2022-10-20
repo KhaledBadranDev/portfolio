@@ -16,7 +16,7 @@ const Projects = () => {
     return (
         <section className="container mx-auto" id="projects">
             <header>
-                <h1 className="text-5xl font-bold flex place-content-center">
+                <h1 className="text-5xl font-bold flex place-content-center text-teal-500">
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={sectionHeader}
@@ -25,7 +25,6 @@ const Projects = () => {
             </header>
             <main>
                 { projectsArr.map(projectObj => (
-                    // <Card imgSrc="https://picsum.photos/id/188/720/400" imgAlt="test" title="Title Here" briefDescription="Brief Description Here - lorem ipsum dolor sit amet - lorem ipsum dolor sit amet lorem dolor sit amet" />
                     <Card imgSrc={projectObj["imgSrc"]} title={projectObj["title"]} techStack={projectObj["techStack"]} briefDescription={projectObj["briefDescription"]} />
                 ))}
             </main>

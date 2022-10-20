@@ -6,21 +6,22 @@ const Footer = () => {
     return (
 
         <footer className="container mx-auto pb-5">
+            <hr/>
             <div className='flex place-content-center mx-auto'>
                 <figure className="text-5xl flex justify-center py-3">
                     <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank" rel="noreferrer">
-                        <AiFillYoutube className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-indigo-700 duration-300" style={{ fontSize: '25px' }} />
+                        <AiFillYoutube className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 text-teal-500 hover:text-violet-700 duration-300" style={{ fontSize: '25px' }} />
                     </a>
                 </figure>
                 <figure className="text-5xl flex justify-center py-3">
                     <a href="https://github.com/ProgrammingGym" target="_blank" rel="noreferrer">
-                        <AiFillGithub className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-indigo-700 duration-300" style={{ fontSize: '25px' }} />
+                        <AiFillGithub className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 text-teal-500 hover:text-violet-700 duration-300" style={{ fontSize: '25px' }} />
                     </a>
                 </figure>
 
                 <figure className="text-5xl flex justify-center py-3">
                     <a href="https://programming-gym.blogspot.com/" target="_blank" rel="noreferrer">
-                        <FaBlogger className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 hover:text-indigo-700 duration-300" style={{ fontSize: '25px' }} />
+                        <FaBlogger className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5 text-teal-500 hover:text-violet-700 duration-300" style={{ fontSize: '25px' }} />
                     </a>
                 </figure>
             </div>
