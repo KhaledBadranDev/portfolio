@@ -14,19 +14,16 @@ const About = () => {
     return (
         <section className="container mx-auto mt-40 mb-40" id="about">
             <header>
-                <h1 className="mb-10 text-5xl font-bold flex place-content-center text-teal-500">
+                <h1 className="mb-10 xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl sm:font-sans font-mono font-bold flex place-content-center text-teal-500">
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={sectionHeader}
                     />
                 </h1>
             </header>
-            <p className="dark:text-[#fff]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis veniam, nesciunt eos voluptate adipisci ullam.
-                Ad necessitatibus vero cumque suscipit iste, minus veritatis
-                tenetur vel illum natus doloremque quisquam commodi maxime eaque dicta
-                sapiente corporis? Beatae quasi nobis quis id. Nesciunt dolores
+            <p className="sm:mx-10 mx-5 dark:text-[#fff] flex place-content-center text-justify">
+            I am a passionate, athletic full stack software developer and occasional content creator.<br/>
+            My aim is to make people's lives better & easier by developing applications and websites.
             </p>
         </section>
     );
