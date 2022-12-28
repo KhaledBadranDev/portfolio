@@ -21,10 +21,48 @@ const About = () => {
                     />
                 </h1>
             </header>
-            <p className="sm:mx-10 mx-5 dark:text-[#fff] flex place-content-center text-justify">
-            I am a passionate, athletic full stack software developer and occasional content creator.<br/>
+            <p className="sm:mx-10 mx-5 dark:text-[#fff] flex place-content-start text-justify">
+            I am a passionate, athletic full stack software developer and occasional content creator.
             My aim is to make people's lives better & easier by developing applications and websites.
             </p>
+
+            <ul className= "mt-10 sm:mx-10 mx-5 list-none list-inside dark:text-[#fff] ">
+                <li className= "mb-8 ">
+                    <p className="font-semibold ">STRAFFR GMBH in Germany</p>
+                    <ul className= "pl-5 mt-1 list-disc list-inside">
+                        <li className="text-teal-500 font-bold">Software Developer | 12/2021 - ongoing</li>
+                        <li className="dark:text-[#AAA]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nulla error aliquam, nobis nam magni officia illo soluta inventore maxime, repudiandae itaque! Labore quaerat quis quidem ea iure minima velit?</li>
+                    </ul>
+                </li>
+                <li className= "mb-8">
+                    <p className="font-semibold">Fiver</p>
+                    <ul className= "pl-5 mt-1 list-disc list-inside">
+                        <li className="text-teal-500 font-bold">Freelancing as a Programmer | 02/2021 - ongoing</li>
+                        <li className="dark:text-[#AAA]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nulla error aliquam, nobis nam magni officia illo soluta inventore maxime, repudiandae itaque! Labore quaerat quis quidem ea iure minima velit?</li>
+                    </ul>
+                </li>
+                <li className= "mb-8 ">
+                    <p className="font-semibold">Sole Proprietorship</p>
+                    <ul className= "pl-5 mt-1 list-disc list-inside">
+                        <li className="text-teal-500 font-bold">Programming Tutor | 05/2020 - ongoing</li>
+                        <li className="dark:text-[#AAA]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nulla error aliquam, nobis nam magni officia illo soluta inventore maxime, repudiandae itaque! Labore quaerat quis quidem ea iure minima velit?</li>
+                    </ul>
+                </li>
+                <li className= "mb-8">
+                    <p className="font-semibold">Leibniz University Hannover in Germany</p>
+                    <ul className= "pl-5 mt-1 list-disc list-inside">
+                        <li className="text-teal-500 font-bold">Student | 10/2019 - 11/2022</li>
+                        <li className="dark:text-[#AAA]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nulla error aliquam, nobis nam magni officia illo soluta inventore maxime, repudiandae itaque! Labore quaerat quis quidem ea iure minima velit?</li>
+                    </ul>
+                </li>
+                <li className= "mb-8">
+                    <p className="font-semibold">Leibniz University Hannover in Germany</p>
+                    <ul className= "pl-5 mt-1 list-disc list-inside">
+                        <li className="text-teal-500 font-bold">Student | 10/2018- 06/2019</li>
+                        <li className="dark:text-[#AAA]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nulla error aliquam, nobis nam magni officia illo soluta inventore maxime, repudiandae itaque! Labore quaerat quis quidem ea iure minima velit?</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
     );
 }
