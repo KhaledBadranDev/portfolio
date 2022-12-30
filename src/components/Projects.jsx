@@ -14,7 +14,7 @@ const Projects = () => {
     }, [])
 
     return (
-        <section className="container mx-auto" id="projects">
+        <section className="container mx-auto mt-40" id="projects">
             <header>
                 <h1 className="xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl sm:font-sans font-mono font-bold flex place-content-center text-teal-500">
                     <AnimatedLetters
