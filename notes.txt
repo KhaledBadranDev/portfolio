@@ -1,0 +1,6 @@
+
+Maybe To Implement in the future:
+- fade timeline when scrolling up and down
+- add tools section
+- improve sending email animation
+
