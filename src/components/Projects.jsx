@@ -1,7 +1,7 @@
 import AnimatedLetters from './AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Card from './Card'
-import projectsArr from '../data/constants'
+import webProjectsArr from '../data/webProjects'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -24,8 +24,17 @@ const Projects = () => {
                 </h1>
             </header>
             <main className="2xl:mx-60 xl:mx-50 lg:mx-40 md:mx-20 sm:mx-10 mx-6">
-                { projectsArr.map(projectObj => (
-                    <Card imgSrc={projectObj["imgSrc"]} title={projectObj["title"]} techStack={projectObj["techStack"]} briefDescription={projectObj["briefDescription"]} />
+                {webProjectsArr.map(projectObj => (
+                    <Card key={projectObj["id"]}
+                        imgSrc={projectObj["imgSrc"]}
+                        title={projectObj["title"]}
+                        techStack={projectObj["techStack"]}
+                        briefDescription={projectObj["briefDescription"]}
+                        webSiteUrl={projectObj["webSiteUrl"]}
+                        gitHubRepoUrl={projectObj["gitHubRepoUrl"]}
+                        hasYoutubeVideo={projectObj["hasYoutubeVideo"]}
+                        youtubeVideoUrl={projectObj["youtubeVideoUrl"]}
+                    />
                 ))}
             </main>
         </section>
