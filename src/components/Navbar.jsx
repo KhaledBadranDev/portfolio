@@ -40,7 +40,7 @@ const Navbar = () => {
                             </AnchorLink>
                         </li>
                         <li className="sm:ml-8 mr-4 text-xl sm:my-0 mt-5">
-                            <AnchorLink offset='150' href="#contact" className='hover:text-violet-700 text-teal-500 duration-300'>
+                            <AnchorLink offset='160' href="#contact" className='hover:text-violet-700 text-teal-500 duration-300'>
                                 Contact
                             </AnchorLink>
                         </li>
