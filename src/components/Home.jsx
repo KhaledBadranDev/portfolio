@@ -51,10 +51,10 @@ const Home = () => {
                 <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank" rel="noreferrer">
                     <AiFillYoutube className="text-xl sm:my-10 my-5 hover:text-violet-700 text-teal-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
-                <a href="https://github.com/ProgrammingGym" target="_blank" rel="noreferrer">
+                <a href="https://github.com/KhaledBadranDev" target="_blank" rel="noreferrer">
                     <AiFillGithub className="md:ml-12 sm:ml-8  ml-4 text-xl sm:my-10 my-5 hover:text-violet-700 text-teal-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
-                <a href="https://programming-gym.blogspot.com/" target="_blank" rel="noreferrer">
+                <a href="https://khaledbadran.blogspot.com/" target="_blank" rel="noreferrer">
                     <FaBlogger className="md:ml-12 sm:ml-8 ml-4 text-xl sm:my-10 my-5 hover:text-violet-700 text-teal-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
             </figure>
