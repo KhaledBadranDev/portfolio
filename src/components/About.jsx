@@ -24,22 +24,19 @@ const About = () => {
             </header>
             <div>
                 <p className="sm:mx-10 mx-5 dark:text-[#fff] flex place-content-start text-justify">
-                    I am a passionate, athletic full stack software developer and occasional content creator.
-                    My aim is to make people's lives better & easier by developing applications and websites.
-                    I also love to teach coding as I believe that programming can empower people to achieve their full potential and live a better life.
-                    This is why I occasionally post coding and tech videos on my YouTube channel.
-                    Aside from that, I am a very athletic person as I regularly practice Olympic weightlifting and Powerlifting.
-                    I also occasionally post some sports content on my second YouTube channel.
+                I am a passionate, athletic, full stack software developer and occasional content creator.
+                My aim is to make people's lives better & easier by developing applications and websites.
+                I also love to teach coding as I believe that programming can empower people to achieve their full potential and live a better life.
+                This is why I occasionally post coding and tech videos. Aside from that,
+                I am a very athletic person as I regularly practice Olympic weightlifting and Powerlifting.
+                Hence, I also occasionally post some sports content.
                 </p>
                 <p className="sm:mx-10 mx-5 mt-10 dark:text-[#fff] flex place-content-center">
-                    Feel free to check out my YouTube channels.
+                    Feel free to check out my YouTube channel.
                 </p>
                 <div className="mt-3 mb-5 flex place-content-center flex-wrap justify-center items-center">
                     <div className="sm:mx-5 mx-2 mb-3">
-                        <Button type="youtube" text="Tech" url="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" />
-                    </div>
-                    <div className="sm:mx-5 mx-2 mb-3">
-                        <Button type="youtube" text="Sport" url="https://www.youtube.com/channel/UCUx5YND04pddfZ2X4O9JcyA" />
+                        <Button type="youtube" text="Khaled Badran" url="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" />
                     </div>
                 </div>
             </div>
