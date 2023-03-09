@@ -14,13 +14,13 @@ const Footer = () => {
                     </a>
                 </figure>
                 <figure className="text-5xl flex justify-center py-3">
-                    <a href="https://github.com/ProgrammingGym" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/KhaledBadranDev" target="_blank" rel="noreferrer">
                         <AiFillGithub className="sm:ml-8 mr-4 text-xl mt-5 text-teal-500 hover:text-violet-700 duration-300" style={{ fontSize: '25px' }} />
                     </a>
                 </figure>
 
                 <figure className="text-5xl flex justify-center py-3">
-                    <a href="https://programming-gym.blogspot.com/" target="_blank" rel="noreferrer">
+                    <a href="https://khaledbadran.blogspot.com/" target="_blank" rel="noreferrer">
                         <FaBlogger className="sm:ml-8 mr-4 text-xl mt-5 text-teal-500 hover:text-violet-700 duration-300" style={{ fontSize: '25px' }} />
                     </a>
                 </figure>
