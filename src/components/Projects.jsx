@@ -25,19 +25,19 @@ const Projects = () => {
             </header>
 
             <div className="relative flex place-content-center m-5">
-                
+
                 {/* the following is for the glowing bag svg */}
                 {/* <div className="absolute w-10 h-10 bg-white dark:bg-[#181818] duration-500 ease-in"> */}
                 <div className="absolute -mt-[6px] w-10 h-10 bg-white dark:bg-[#181818] duration-500 ease-in">
                     <div className='rounded-full w-0 h-2  sm:mt-[10px] mt-[6px] sm:ml-[12px] ml-[13px]  dark:shadow-[6px_2px_22px_10px_rgba(20,184,166,1)] shadow-[6px_2px_22px_8px_rgba(109,40,217,1)]' >
-                        <svg className="absolute sm:w-[24px] w-[16px]  sm:-mt-[1px] sm:-ml-[4px] -ml-[1px]  fill-black dark:fill-white" aria-hidden="true"  viewBox="0 0 24 24" version="1.1"  data-view-component="true">
+                        <svg className="absolute sm:w-[24px] w-[16px]  sm:-mt-[1px] sm:-ml-[4px] -ml-[1px]  fill-black dark:fill-white" aria-hidden="true" viewBox="0 0 24 24" version="1.1" data-view-component="true">
                             <path fill-rule="evenodd" d="M7.5 1.75C7.5.784 8.284 0 9.25 0h5.5c.966 0 1.75.784 1.75 1.75V4h4.75c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0121.25 22H2.75A1.75 1.75 0 011 20.25V5.75C1 4.784 1.784 4 2.75 4H7.5V1.75zm-5 10.24v8.26c0 .138.112.25.25.25h18.5a.25.25 0 00.25-.25v-8.26A4.233 4.233 0 0118.75 13H5.25a4.233 4.233 0 01-2.75-1.01zm19-3.24a2.75 2.75 0 01-2.75 2.75H5.25A2.75 2.75 0 012.5 8.75v-3a.25.25 0 01.25-.25h18.5a.25.25 0 01.25.25v3zm-6.5-7V4H9V1.75a.25.25 0 01.25-.25h5.5a.25.25 0 01.25.25z"></path>
                         </svg>
                     </div>
                 </div>
                 {/* end glowing bag svg */}
 
-                <svg className="sm:w-[485px] w-3/4" viewBox="0 0 485 120" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <svg className="sm:w-[485px] w-3/4" viewBox="0 0 485 140" xmlns="http://www.w3.org/2000/svg" fill="none">
                     <defs>
 
                         <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="52.8762" width="52.876" y="216.124" x="33.3145" id="filter0_dddd_120_10501">
@@ -63,23 +63,34 @@ const Projects = () => {
                                 <circle cx="182.8095" cy="226.12395" id="svg_3" fill="black" transform="matrix(1 0 0 -1 59.7525 242.562)" r="6.43806" />
                                 <circle cx="182.8095" cy="226.12395" id="svg_4" stroke-width="3" stroke="white" transform="matrix(1 0 0 -1 59.7525 242.562)" r="4.93806" />
                             </g>
-                            <text x="7" y="110" font-size="24" fill="white">Solo</text>
-                            <text x="410" y="110" font-size="24" fill="white">Collab</text>
+
+                            <foreignObject x="0" y="85" width="100" height="50">
+                                <button className='button w-24 h-9  bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
+                                    active:translate-y-2  active:[box-shadow:0_0px_0_0_#115e59,0_0px_0_0_#1b70f841]
+                                    active:border-b-[0px]
+                                    transition-all duration-120  [box-shadow:0_10px_0_0_#115e59,0_15px_0_0_#1b70f841]
+                                    border-b-[1px] border-blue-400
+                                '>
+                                    <span className='flex flex-col justify-center items-center h-full text-white font-bold sm:text-lg text-xl'>Solo</span>
+                                </button>
+                            </foreignObject>
+
+                            <foreignObject x="384" y="85" width="100" height="50">
+                                <button className='button w-24 h-9 bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
+                                    active:translate-y-2  active:[box-shadow:0_0px_0_0_#115e59,0_0px_0_0_#1b70f841]
+                                    active:border-b-[0px]
+                                    transition-all duration-120 [box-shadow:0_10px_0_0_#115e59,0_15px_0_0_#1b70f841]
+                                    border-b-[1px] border-blue-400
+                                '>
+                                    <span className='flex flex-col justify-center items-center h-full text-white font-bold sm:text-lg text-xl'>Collab</span>
+                                </button>
+                            </foreignObject>
                         </g>
                     </g>
                 </svg>
 
             </div>
-            
-            {/* TODO buttons  */}
-    <div className='button w-40 h-16 bg-blue-500 rounded-lg cursor-pointer select-none
-    active:translate-y-2  active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841]
-    active:border-b-[0px]
-    transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]
-    border-b-[1px] border-blue-400
-  '>
-		<span className='flex flex-col justify-center items-center h-full text-white font-bold text-lg '>Active</span>
-	</div>
+
 
             <main className="2xl:mx-60 xl:mx-50 lg:mx-40 md:mx-20 sm:mx-10 mx-6">
                 {webProjectsArr.map(projectObj => (
