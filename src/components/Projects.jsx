@@ -1,17 +1,32 @@
 import AnimatedLetters from './AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Card from './Card'
-import webProjectsArr from '../data/webProjects'
+import soloProjectsArr from '../data/soloProjects'
+import collabProjectsArr from '../data/collabProjects'
+import Button from "./Button"
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const sectionHeader = ["P", "r", "o", "j", "e", "c", "t", "s"]
+    const [selectedProjectsArr, setSelectedProjectsArr] = useState(soloProjectsArr)
+
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 2000)
     }, [])
+
+    const handelSelectSoloProjects = () => {
+        setSelectedProjectsArr(soloProjectsArr)
+    }
+    const handelSelectCollabProjects = () => {
+        setSelectedProjectsArr(collabProjectsArr)
+    }
+
+    // rerender every time the selectedProjectsArr gets changed
+    useEffect(() => {
+    }, [selectedProjectsArr])
 
     return (
         <section className="container mx-auto mt-40" id="projects">
@@ -70,7 +85,9 @@ const Projects = () => {
                                     active:border-b-[0px]
                                     transition-all duration-120  [box-shadow:0_10px_0_0_#115e59,0_15px_0_0_#1b70f841]
                                     border-b-[1px] border-blue-400
-                                '>
+                                '
+                                    onClick={handelSelectSoloProjects}
+                                >
                                     <span className='flex flex-col justify-center items-center h-full text-white font-bold sm:text-lg text-xl'>Solo</span>
                                 </button>
                             </foreignObject>
@@ -81,7 +98,9 @@ const Projects = () => {
                                     active:border-b-[0px]
                                     transition-all duration-120 [box-shadow:0_10px_0_0_#115e59,0_15px_0_0_#1b70f841]
                                     border-b-[1px] border-blue-400
-                                '>
+                                '
+                                    onClick={handelSelectCollabProjects}
+                                >
                                     <span className='flex flex-col justify-center items-center h-full text-white font-bold sm:text-lg text-xl'>Collab</span>
                                 </button>
                             </foreignObject>
@@ -93,18 +112,35 @@ const Projects = () => {
 
 
             <main className="2xl:mx-60 xl:mx-50 lg:mx-40 md:mx-20 sm:mx-10 mx-6">
-                {webProjectsArr.map(projectObj => (
+
+                {/* // TODO all projects are built from the ground up by me */}
+                {/* // TODO I have collaborated on the following projects  */}
+
+                {selectedProjectsArr.map(projectObj => (
                     <Card key={projectObj["id"]}
                         imgSrc={projectObj["imgSrc"]}
                         title={projectObj["title"]}
                         techStack={projectObj["techStack"]}
                         briefDescription={projectObj["briefDescription"]}
+                        hasUrl={projectObj["hasUrl"]}
                         webSiteUrl={projectObj["webSiteUrl"]}
+                        hasGitHubRepoUrl={projectObj["hasGitHubRepoUrl"]}
                         gitHubRepoUrl={projectObj["gitHubRepoUrl"]}
                         hasYoutubeVideo={projectObj["hasYoutubeVideo"]}
                         youtubeVideoUrl={projectObj["youtubeVideoUrl"]}
                     />
                 ))}
+
+                {/* For more projects, feel free to check out my GitHub account. */}
+                <p className="sm:mx-10 mx-5 mt-10 dark:text-[#fff] flex place-content-center">
+                    For more projects, feel free to check out my GitHub account.
+                </p>
+                <div className="mt-3 mb-5 flex place-content-center flex-wrap justify-center items-center">
+                    <div className="sm:mx-5 mx-2 mb-3">
+                        <Button type="github" text="Khaled Badran" url="https://github.com/KhaledBadranDev" />
+                    </div>
+                </div>
+
             </main>
         </section>
     );
