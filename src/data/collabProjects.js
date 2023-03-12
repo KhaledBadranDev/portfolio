@@ -24,9 +24,17 @@ const straffrMobileApp = {
         "Figma",
     ],
     "briefDescription": `
-        As a full stack software developer specialized in the back-end,
-        I do not spend much time on the front-end. 
-        This portfolio has been a great opportunity, allowing me to invest some time focusing on the front-end development.
+        “STRAFFR GmbH” is a German fitness company that produces smart bands that can be connected to mobile phones via Bluetooth and the STRAFFR mobile app.
+        As a full-stack software developer collaborating with STRAFFR GmbH, an early-stage company, I handled various tasks in different areas, which required me to have a wide range of skills and knowledge. 
+        I collaborated on the back-end development, database, data analysis, Machine learning, etc. 
+        I also implemented the logic for displaying personalized sections in the feed.
+        I deployed cloud functions, including functions for importing and exporting data periodically and performing data analysis using tools like BigQuery, Google Looker Studio, etc.
+        In addition to that, I utilized Twilio Segment SDK to track users’ activities on the app, to use this data to further improve and personalize the app. One of my contributions was using the data that was exported to train machine learning models using Google Vertex AI.
+        By leveraging these models, we were able to continually improve the app's functionalities and deliver a more personalized experience to each user.
+
+
+        \n\n"The code for this project is under a non-disclosure agreement (NDA), and hence cannot be shared publicly. However, source code examples and demos can be shown upon request."
+        
     `,
     "hasUrl": true,
     "webSiteUrl": "https://en.straffr.com/pages/app-download",
@@ -46,29 +54,31 @@ const glAluminumPatioCovers = {
         "Plesk Obsidian",
         "FileZilla FTP",
         "REST API",
+        "MVC Pattern",
         "JWT",
         "AJAX/Fetch API",
         "Vanilla JavaScript",
         "PHP",
         "Node.js",
+        "Express.js",
         "Dynamic HTML",
         "HTML",
         "Bootstrap",
     ],
     "briefDescription": `
-        I love to teach children coding, so  I frequently use online platforms to implement games and projects with them.
-        This has lead me to build a web app that can embed these games and projects all in one place.
-        Ajax and REST APIs have been consumed to fetch the data from their original platforms.
-        Additional data such as admin email, author name etc. is then added to the fetched data and they will be stored together in the firestore NoSQL database.
-        Firebase authentication and firestore rules and permissions have been implemented.
-        The web app implements all the CRUD (Create, Read, Update and Delete) operations.
-     `,
-     "hasUrl": true,
-     "webSiteUrl": "https://glaluminumpatiocovers.com",
-     "hasGitHubRepoUrl": false,
-     "gitHubRepoUrl": "",
-     "hasYoutubeVideo": false,
-     "youtubeVideoUrl": "",
+        GL Aluminum Patio Covers is a Canadian company that specializes in designing and manufacturing high-quality engineered Do-It-Yourself Patio Cover Kits. I collaborated with Affordable Web Design Ltd to design and build a website for GL Aluminum Patio Covers.
+        My main responsibility was designing and implementing the back-end development solely. This includes: designing the relational SQL database using phpMyAdmin and MySQL, as well as implementing a REST API using Node.js and Express.js. I followed the Model-View-Controller pattern for better organization and maintenance. Furthermore, I worked on integrating the API with the front-end to ensure seamless functionality.
+        One of the key features of this project was the implementation of an Admin Control Panel. I designed and developed both the front-end and back-end for the control panel, enabling the admin to log in with a Json Web Token and perform essential CRUD (Create, Read, Update, Delete) operations on products. I also ensured the security of the system by implementing a log out feature for the admin.
+        
+        
+        "The code for this project is under a non-disclosure agreement (NDA), and hence cannot be shared publicly. However, source code examples and demos can be shown upon request."
+    `,
+    "hasUrl": true,
+    "webSiteUrl": "https://glaluminumpatiocovers.com",
+    "hasGitHubRepoUrl": false,
+    "gitHubRepoUrl": "",
+    "hasYoutubeVideo": false,
+    "youtubeVideoUrl": "",
 }
 
 

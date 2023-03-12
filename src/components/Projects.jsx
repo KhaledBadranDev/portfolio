@@ -8,7 +8,7 @@ import Button from "./Button"
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const sectionHeader = ["P", "r", "o", "j", "e", "c", "t", "s"]
-    const [selectedProjectsArr, setSelectedProjectsArr] = useState(soloProjectsArr)
+    const [selectedProjectsArr, setSelectedProjectsArr] = useState(collabProjectsArr)
 
 
     useEffect(() => {
@@ -80,10 +80,10 @@ const Projects = () => {
                             </g>
 
                             <foreignObject x="0" y="85" width="100" height="50">
-                                <button className='button w-24 h-9  bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
+                                <button className='button w-[70px] h-8  bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
                                     active:translate-y-2  active:[box-shadow:0_0px_0_0_#115e59,0_0px_0_0_#1b70f841]
                                     active:border-b-[0px]
-                                    transition-all duration-120  [box-shadow:0_10px_0_0_#115e59,0_15px_0_0_#1b70f841]
+                                    transition-all duration-100  [box-shadow:0_7px_0_0_#115e59,0_10px_0_0_#1b70f841]
                                     border-b-[1px] border-blue-400
                                 '
                                     onClick={handelSelectSoloProjects}
@@ -92,11 +92,11 @@ const Projects = () => {
                                 </button>
                             </foreignObject>
 
-                            <foreignObject x="384" y="85" width="100" height="50">
-                                <button className='button w-24 h-9 bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
+                            <foreignObject x="405" y="85" width="100" height="50">
+                                <button className='button w-[70px] h-8 bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
                                     active:translate-y-2  active:[box-shadow:0_0px_0_0_#115e59,0_0px_0_0_#1b70f841]
                                     active:border-b-[0px]
-                                    transition-all duration-120 [box-shadow:0_10px_0_0_#115e59,0_15px_0_0_#1b70f841]
+                                    transition-all duration-100 [box-shadow:0_7px_0_0_#115e59,0_10px_0_0_#1b70f841]
                                     border-b-[1px] border-blue-400
                                 '
                                     onClick={handelSelectCollabProjects}
@@ -115,6 +115,18 @@ const Projects = () => {
 
                 {/* // TODO all projects are built from the ground up by me */}
                 {/* // TODO I have collaborated on the following projects  */}
+
+                <span className="mt-14 dark:text-[#AAA] flex place-content-center flex-wrap justify-center items-center duration-500 ease-in">
+                    Here are a few of my&nbsp;<strong>{selectedProjectsArr === soloProjectsArr ? "solo" : "collaborative"}</strong>&nbsp;projects:
+                </span>
+                <span className="mt-2 dark:text-[#AAA] flex place-content-center flex-wrap justify-center items-center duration-500 ease-in">
+                    {selectedProjectsArr === soloProjectsArr ?
+                        "All the projects listed here are designed and implemented solely from the ground up by me." :
+                        "I have collaborated on the following projects with other talented designers, developers, and professionals."
+                    }
+
+                </span>
+
 
                 {selectedProjectsArr.map(projectObj => (
                     <Card key={projectObj["id"]}

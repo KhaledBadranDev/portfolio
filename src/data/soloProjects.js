@@ -2,8 +2,44 @@ import embeddedGamesThumbnail from "../assets/embeddedGamesThumbnail.png"
 import portfolioThumbnail from "../assets/portfolioThumbnail.png"
 import straffrExcelImporterThumbnail from "../assets/straffrExcelImporterThumbnail.png"
 
-const embeddedGames = {
+const straffrExcelImporter = {
     "id": 0,
+    "imgSrc": straffrExcelImporterThumbnail,
+    "title": "STRAFFR Excel Importer",
+    "techStack": [
+        "Firestore NoSQL Database",
+        "Firestore Database Rules",
+        "Firebase",
+        "Vanilla JavaScript",
+        "Vanilla CSS",
+        "Dynamic HTML",
+        "HTML",
+        "GitHub",
+        "VSC",
+    ],
+    "briefDescription": `
+        "STRAFFR" needed a solution to efficiently import large amounts of various data from Excel spreadsheets into their database.
+        To meet this challenge, I solely designed and developed both the front-end and back-end for “STRAFFR Excel Importer”.
+        This custom web app tool enables STRAFFR stakeholders, including founders, co-founders, CEO, CTO, and developers,
+        to seamlessly import various data from Excel files into their database by parsing the files.
+        This means that the stakeholders can save many work hours, as the tool does not require any manual input to the database.
+        The tool is designed with a user-friendly interface, and provides real-time feedback on the status of the import process.
+        In case of any errors, clear instructions are displayed to assist with prompt resolution.
+        This tool can handle complex excel files with many excel spreadsheets, each spreadsheet has its own structure.
+        To ensure security I implemented strict Firestore rules and generated unique access tokens for the stakeholders.
+
+        STRAFFR Excel Importer is used only internally at STRAFFR GmbH and due to non-disclosure agreement (NDA), the link to the web app as well as the code cannot be shared publicly. However, source code examples and demos can be shown upon request.
+    `,
+    "hasUrl": false,
+    "webSiteUrl": "",
+    "hasGitHubRepoUrl": false,
+    "gitHubRepoUrl": "",
+    "hasYoutubeVideo": false,
+    "youtubeVideoUrl": "",
+}
+
+const embeddedGames = {
+    "id": 1,
     "imgSrc": embeddedGamesThumbnail,
     "title": "Embedded Games",
     "techStack": [
@@ -31,34 +67,6 @@ const embeddedGames = {
     "webSiteUrl": "https://embeddedgames.firebaseapp.com",
     "hasGitHubRepoUrl": true,
     "gitHubRepoUrl": "https://github.com/ProgrammingGym/embedded-games",
-    "hasYoutubeVideo": false,
-    "youtubeVideoUrl": "",
-}
-
-const straffrExcelImporter = {
-    "id": 1,
-    "imgSrc": straffrExcelImporterThumbnail,
-    "title": "STRAFFR Excel Importer",
-    "techStack": [
-        "Firestore NoSQL Database",
-        "Firestore Database Rules",
-        "Firebase",
-        "Vanilla JavaScript",
-        "Vanilla CSS",
-        "Dynamic HTML",
-        "HTML",
-        "GitHub",
-        "VSC",
-    ],
-    "briefDescription": `
-        As a full stack software developer specialized in the back-end,
-        I do not spend much time on the front-end. 
-        This portfolio has been a great opportunity, allowing me to invest some time focusing on the front-end development.
-    `,
-    "hasUrl": false,
-    "webSiteUrl": "",
-    "hasGitHubRepoUrl": false,
-    "gitHubRepoUrl": "",
     "hasYoutubeVideo": false,
     "youtubeVideoUrl": "",
 }
@@ -92,5 +100,5 @@ const thisPortfolio = {
 }
 
 
-const soloProjectsArr = [embeddedGames, straffrExcelImporter, thisPortfolio]
+const soloProjectsArr = [straffrExcelImporter, embeddedGames, thisPortfolio]
 export default soloProjectsArr
