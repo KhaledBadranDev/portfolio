@@ -120,7 +120,7 @@ const Contact = () => {
                         <div className="flex flex-wrap -m-2">
                             <div className="p-2 w-1/2">
                                 <div className="relative">
-                                    <label for="name" className="leading-7 text-sm dark:text-[#AAA]">
+                                    <label htmlFor="name" className="leading-7 text-sm dark:text-[#AAA]">
                                         Name
                                     </label>
                                     <input
@@ -136,7 +136,7 @@ const Contact = () => {
                             </div>
                             <div className="p-2 w-1/2">
                                 <div className="relative">
-                                    <label for="email" className="leading-7 text-sm dark:text-[#AAA]">
+                                    <label htmlFor="email" className="leading-7 text-sm dark:text-[#AAA]">
                                         Email
                                     </label>
                                     <input
@@ -152,7 +152,7 @@ const Contact = () => {
                             </div>
                             <div className="p-2 w-full">
                                 <div className="relative">
-                                    <label for="message" className="leading-7 text-sm dark:text-[#AAA]">Message</label>
+                                    <label htmlFor="message" className="leading-7 text-sm dark:text-[#AAA]">Message</label>
                                     <textarea
                                         required
                                         id="message"
@@ -172,7 +172,7 @@ const Contact = () => {
                             {(submissionStatusString !== "initial" && (isSent === false)) &&
                                 <div className="flex place-content-center w-full mt-5">
                                     <svg className="mx-1 mt-[2px] animate-spin h-5 w-5 text-teal-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <circle className="opacity-50 text-violet-700" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                        <circle className="opacity-50 text-violet-700" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                         <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                     </svg>
                                     <span className="dark:text-[#AAA] mx-1">Sending ...</span>

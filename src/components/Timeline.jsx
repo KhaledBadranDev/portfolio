@@ -43,12 +43,12 @@ const Timeline = () => {
                     <div className="square-mask relative ml-[2px] -mt-1 pb-5 -mb-1 w-[101%] pt-5 bg-white dark:bg-[#181818] duration-500 ease-in">
 
                         {timelineArr.map(timelineItem => (
-                            <>
+                            <div key={timelineItem.id}>
                                 <li className="relative pt-5 mb-5">
                                     <div className="absolute w-4 h-12 -left-2 pb-[50px] bg-white dark:bg-[#181818] duration-500 ease-in">
                                         <div className='mt-[19px] rounded-full w-0 h-2 dark:shadow-[6px_2px_22px_10px_rgba(20,184,166,1)] shadow-[6px_2px_22px_8px_rgba(109,40,217,1)]'>
                                             <svg className="absolute -mt-[6px] -ml-[5px] fill-black dark:fill-white" aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true">
-                                                <path fill-rule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"></path>
+                                                <path fillRule="evenodd" d="M8.78 4.97a.75.75 0 010 1.06L2.81 12l5.97 5.97a.75.75 0 11-1.06 1.06l-6.5-6.5a.75.75 0 010-1.06l6.5-6.5a.75.75 0 011.06 0zm6.44 0a.75.75 0 000 1.06L21.19 12l-5.97 5.97a.75.75 0 101.06 1.06l6.5-6.5a.75.75 0 000-1.06l-6.5-6.5a.75.75 0 00-1.06 0z"></path>
                                             </svg>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@ const Timeline = () => {
                                         </ul>
                                     </div>
                                 </li>
-                            </>
+                            </div>
                         ))}
                     </div>
                 </ul>

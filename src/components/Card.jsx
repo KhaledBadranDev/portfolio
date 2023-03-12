@@ -2,17 +2,17 @@
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Button from "./Button"
 
-const Card = ({ imgSrc, title, techStack, briefDescription, hasUrl, webSiteUrl, hasGitHubRepoUrl, gitHubRepoUrl, hasYoutubeVideo, youtubeVideoUrl }) => {
+const Card = ({ projectId, imgSrc, title, techStack, briefDescription, hasUrl, webSiteUrl, hasGitHubRepoUrl, gitHubRepoUrl, hasYoutubeVideo, youtubeVideoUrl }) => {
     return (
         <article className="mt-10 sm:mb-20 mb-12">
             <div className="justify-items-start justify-between h-full shadow-xl shadow-teal-500/60 rounded-2xl overflow-hidden">
-                <div class="backdrop-blur-sm dark:bg-black/10 bg-black/50 transition duration-300 ease-in-out">
+                <div className="backdrop-blur-sm dark:bg-black/10 bg-black/50 transition duration-300 ease-in-out">
                     <figure>
                         {/* 
-                        the conditional rendering here is just to change 
-                        the a tag to an anchor tag if the user clicks on visiting this portfolio.
-                        Instead of opening a new tap, we just scroll up the home section/page
-                        */}
+                            the conditional rendering here is just to change 
+                            the a tag to an anchor tag if the user clicks on visiting this portfolio.
+                            Instead of opening a new tap, we just scroll up the home section/page
+                            */}
                         {webSiteUrl === "https://www.khaledbadran.ca" &&
                             <AnchorLink href="#home">
                                 <img className="w-full object-cover object-center opacity-60 hover:opacity-95 transition duration-150 ease-in"
@@ -40,11 +40,11 @@ const Card = ({ imgSrc, title, techStack, briefDescription, hasUrl, webSiteUrl, 
                             // add spaces between words
                             techStack.map(element => {
                                 return (
-                                    <>
+                                    <div key={projectId+element}>
                                         <label className="text-[#000] bg-amber-200 py-1 px-2 mr-2 mt-2">
                                             {element}
                                         </label>
-                                    </>
+                                    </div>
                                 )
                             })
                         }

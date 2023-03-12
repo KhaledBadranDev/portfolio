@@ -2,7 +2,7 @@ import glAluminumPatioCoversThumbnail from "../assets/glAluminumPatioCoversThumb
 import straffrMobileAppThumbnail from "../assets/straffrMobileAppThumbnail.png"
 
 const straffrMobileApp = {
-    "id": 0,
+    "id": 1000,
     "imgSrc": straffrMobileAppThumbnail,
     "title": "STRAFFR Mobile App",
     "techStack": [
@@ -45,7 +45,7 @@ const straffrMobileApp = {
 }
 
 const glAluminumPatioCovers = {
-    "id": 1,
+    "id": 1001,
     "imgSrc": glAluminumPatioCoversThumbnail,
     "title": "GL Aluminum Patio Covers",
     "techStack": [

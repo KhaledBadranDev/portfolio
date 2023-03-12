@@ -43,11 +43,9 @@ const Home = () => {
                 </h1>
             </header>
             <div className="flex place-content-center sm:mt-40 mt-5">
-                <AnchorLink offset='150' href="#about" className='hover:text-violet-700 text-teal-500'>
-                    <Button type="Read" text="More About Me" />
-                </AnchorLink>
+                <Button type="Read" text="More About Me" url="https://www.khaledbadran.ca/#about"/>
             </div>
-            <figure className="text-5xl flex justify-center py-3 ">
+            <figure  className="text-5xl flex justify-center py-3 ">
                 <a href="https://www.youtube.com/channel/UCq1qtlU3urNPLd5yIwhht1w" target="_blank" rel="noreferrer">
                     <AiFillYoutube className="text-xl sm:my-10 my-5 hover:text-violet-700 text-teal-500 duration-300" style={{ fontSize: '25px' }} />
                 </a>
@@ -61,7 +59,7 @@ const Home = () => {
             <div className="flex place-content-center mt-[70px] mb-60 pb-40">
                 <AnchorLink offset='150' href="#projects" className='hover:text-violet-700 text-teal-500'>
                     <div className=" flex items-center justify-center animate-bounce bg-white dark:bg-[#181818] p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full">
-                        <svg className="w-12 h-12 text-violet-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-12 h-12 text-violet-700" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </div>

@@ -1,5 +1,6 @@
 
 const straffr = {
+    id:0,
     jobTitle: "Software Developer",
     date: "12/2021 - ongoing",
     company: "At STRAFFR GMBH in Germany",
@@ -11,6 +12,7 @@ const straffr = {
 }
 
 const freelancing = {
+    id:1,
     jobTitle: "Freelancing as a Software Developer",
     date: "02/2021 - ongoing",
     company: "On Fiver",
@@ -23,6 +25,7 @@ const freelancing = {
 }
 
 const tutor = {
+    id:2,
     jobTitle: "Coding Tutor",
     date: "05/2020 - ongoing",
     company: "Sole Proprietor",
@@ -36,6 +39,7 @@ const tutor = {
 }
 
 const computerScienceStudent = {
+    id:3,
     jobTitle: "Computer Science Student",
     date: "10/2019 - 11/2022",
     company: "At Leibniz University Hannover in Germany",
@@ -49,6 +53,7 @@ const computerScienceStudent = {
 }
 
 const foundationCourseStudent = {
+    id:4,
     jobTitle: "Technical Foundation Course Student",
     date: "10/2018- 06/2019",
     company: "At Leibniz University Hannover in Germany",

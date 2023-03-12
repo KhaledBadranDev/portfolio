@@ -13,8 +13,11 @@ const Button = ({ type, text, url }) => {
                 the a tag to an anchor tag if the user clicks on visiting this portfolio.
                 Instead of opening a new tap, we just scroll up the home section/page
              */}
-            {url === "https://www.khaledbadran.ca" &&
-                <AnchorLink href="#home"  className="relative inline-block group">
+            {(url === "https://www.khaledbadran.ca" || url === "https://www.khaledbadran.ca/#about") &&
+                <AnchorLink
+                    href={url === "https://www.khaledbadran.ca" ? "#home" : "#about"}
+                    className="relative inline-block group"
+                >
                     <span className="relative z-10 block px-4 py-2 overflow-hidden font-medium leading-tight text-gray-800 dark:text-[#fff] transition-colors duration-300 ease-out border-2 border-teal-500 rounded-lg group-hover:text-white">
                         <span className="absolute inset-0 w-full h-full px-4 py-2 rounded-lg bg-gray-50 dark:bg-[#000]"></span>
                         <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-teal-500 group-hover:-rotate-180 ease"></span>
@@ -58,7 +61,7 @@ const Button = ({ type, text, url }) => {
                     <span className="absolute bottom-0 right-0 w-full h-10 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-teal-500 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
                 </AnchorLink>
             }
-            {url !== "https://www.khaledbadran.ca" &&
+            {(url !== "https://www.khaledbadran.ca" &&  url !== "https://www.khaledbadran.ca/#about")&&
                 <a href={url} target="_blank" rel="noreferrer" className="relative inline-block group">
                     <span className="relative z-10 block px-4 py-2 overflow-hidden font-medium leading-tight text-gray-800 dark:text-[#fff] transition-colors duration-300 ease-out border-2 border-teal-500 rounded-lg group-hover:text-white">
                         <span className="absolute inset-0 w-full h-full px-4 py-2 rounded-lg bg-gray-50 dark:bg-[#000]"></span>
