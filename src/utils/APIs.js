@@ -1,7 +1,7 @@
 const sendEmail = (emailInfoObj) => {
     // Reference/Documentation: https://formsubmit.co/ajax-documentation
     return new Promise(async (resolve, reject) => {
-        fetch("https://formsubmit.co/ajax/adc8426fa7d0c56378adbc291f7a614e", {
+        fetch("https://formsubmit.co/ajax/9fe657b28eb621f5c145b7b3c1f4c68e", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
