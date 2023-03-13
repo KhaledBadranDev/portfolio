@@ -80,7 +80,7 @@ const Projects = () => {
                             </g>
 
                             <foreignObject x="0" y="85" width="100" height="50">
-                                <button className='button w-[70px] h-8  bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
+                                <button className='button sm:w-[70px] w-[85px] h-8  bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
                                     active:translate-y-2  active:[box-shadow:0_0px_0_0_#115e59,0_0px_0_0_#1b70f841]
                                     active:border-b-[0px]
                                     transition-all duration-100  [box-shadow:0_7px_0_0_#115e59,0_10px_0_0_#1b70f841]
@@ -88,12 +88,12 @@ const Projects = () => {
                                 '
                                     onClick={handelSelectSoloProjects}
                                 >
-                                    <span className='flex flex-col justify-center items-center h-full text-white font-bold sm:text-lg text-xl'>Solo</span>
+                                    <span className='flex flex-col justify-center items-center h-full text-white sm:font-bold font-semibold sm:text-lg text-2xl'>Solo</span>
                                 </button>
                             </foreignObject>
 
-                            <foreignObject x="405" y="85" width="100" height="50">
-                                <button className='button w-[70px] h-8 bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
+                            <foreignObject x="400" y="85" width="100" height="50">
+                                <button className='button sm:w-[70px] w-[85px] h-8 bg-teal-500 hover:bg-teal-400 rounded-lg cursor-pointer select-none
                                     active:translate-y-2  active:[box-shadow:0_0px_0_0_#115e59,0_0px_0_0_#1b70f841]
                                     active:border-b-[0px]
                                     transition-all duration-100 [box-shadow:0_7px_0_0_#115e59,0_10px_0_0_#1b70f841]
@@ -101,7 +101,7 @@ const Projects = () => {
                                 '
                                     onClick={handelSelectCollabProjects}
                                 >
-                                    <span className='flex flex-col justify-center items-center h-full text-white font-bold sm:text-lg text-xl'>Collab</span>
+                                    <span className='flex flex-col justify-center items-center h-full text-white sm:font-bold font-semibold sm:text-lg text-2xl'>Collab</span>
                                 </button>
                             </foreignObject>
                         </g>
@@ -112,9 +112,6 @@ const Projects = () => {
 
 
             <main className="2xl:mx-60 xl:mx-50 lg:mx-40 md:mx-20 sm:mx-10 mx-6">
-
-                {/* // TODO all projects are built from the ground up by me */}
-                {/* // TODO I have collaborated on the following projects  */}
 
                 <span className="mt-14 dark:text-[#AAA] flex place-content-center flex-wrap justify-center items-center duration-500 ease-in">
                     Here are a few of my&nbsp;<strong>{selectedProjectsArr === soloProjectsArr ? "solo" : "collaborative"}</strong>&nbsp;projects:
