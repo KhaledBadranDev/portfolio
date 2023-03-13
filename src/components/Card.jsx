@@ -40,11 +40,9 @@ const Card = ({ projectId, imgSrc, title, techStack, briefDescription, hasUrl, w
                             // add spaces between words
                             techStack.map(element => {
                                 return (
-                                    <div key={projectId+element}>
-                                        <label className="text-[#000] bg-amber-200 py-1 px-2 mr-2 mt-2">
-                                            {element}
-                                        </label>
-                                    </div>
+                                    <label className="text-[#000] bg-amber-200 py-1 px-2 mr-2 mt-2" key={projectId+element}>
+                                        {element}
+                                    </label>
                                 )
                             })
                         }
