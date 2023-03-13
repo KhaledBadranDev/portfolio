@@ -82,14 +82,15 @@ const thisPortfolio = {
         "CSS",
         "JavaScript",
         "SCSS",
+        "PWA",
         "GitHub",
         "VSC",
         "Firebase",
     ],
     "briefDescription": `
-        As a full stack software developer specialized in the back-end,
-        I do not spend much time on the front-end. 
-        This portfolio has been a great opportunity, allowing me to invest some time focusing on the front-end development.
+        Developing this portfolio has been a valuable chance for me to concentrate on front-end development.
+        I also created a manifest.json file to enable Progressive Web App (PWA) support and
+        optimized the meta tags to improve search engine optimization (SEO).
     `,
     "hasUrl": true,
     "webSiteUrl": "https://www.khaledbadran.ca",
