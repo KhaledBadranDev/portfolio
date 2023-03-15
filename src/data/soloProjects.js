@@ -66,7 +66,7 @@ const embeddedGames = {
     "hasUrl": true,
     "webSiteUrl": "https://embeddedgames.firebaseapp.com",
     "hasGitHubRepoUrl": true,
-    "gitHubRepoUrl": "https://github.com/ProgrammingGym/embedded-games",
+    "gitHubRepoUrl": "https://github.com/KhaledBadranDev/embedded-games",
     "hasYoutubeVideo": false,
     "youtubeVideoUrl": "",
 }
@@ -95,7 +95,7 @@ const thisPortfolio = {
     "hasUrl": true,
     "webSiteUrl": "https://www.khaledbadran.ca",
     "hasGitHubRepoUrl": true,
-    "gitHubRepoUrl": "https://github.com/ProgrammingGym/portfolio",
+    "gitHubRepoUrl": "https://github.com/KhaledBadranDev/portfolio",
     "hasYoutubeVideo": false,
     "youtubeVideoUrl": "",
 }
