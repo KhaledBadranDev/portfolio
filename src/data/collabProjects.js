@@ -53,6 +53,7 @@ const glAluminumPatioCovers = {
         "phpMyAdmin",
         "Plesk Obsidian",
         "FileZilla FTP",
+        "Apache",
         "REST API",
         "MVC Pattern",
         "JWT",
