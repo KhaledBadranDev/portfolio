@@ -27,7 +27,7 @@ const freelancing = {
     id: 2,
     jobTitle: "Freelancing as a Software Developer",
     date: "02/2021 - 05/2022",
-    company: "On Fiver",
+    company: "On Fiverr",
     description: `
         I started to take on freelance projects while studying Computer Science.
         At that time, freelancing offered me more control and flexibility than a traditional job.
